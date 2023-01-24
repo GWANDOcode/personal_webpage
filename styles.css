@@ -19,6 +19,12 @@ header {
     height: 5rem;
     width: 100vw;
     position: fixed;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: .02rem;
+    border-color: black;
+    border-style: solid;
 }
 
 header > img {
@@ -34,6 +40,7 @@ header > img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
 }
 
 /* MAIN CONTENT*/
