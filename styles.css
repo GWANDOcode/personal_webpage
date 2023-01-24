@@ -5,10 +5,12 @@
 html {
     font-size: 16px;
     font-family: "Andale Mono", AndaleMono, monospace;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    transition: height 1s;
 }
 
 /* HEADER & FOOTER */
@@ -38,10 +40,11 @@ header > img {
 
 /* FOOTER */
 footer {
+    position: absolute;
     margin-top: -5rem;
 }
 
-footer > img {
+footer > a img {
     width: 1.4rem;
 }
 
@@ -72,4 +75,28 @@ footer > img {
 
 .content {
     margin-top: 10rem;
+}
+
+/* CONTACT INFO */
+.contact_info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_content {
+    border: solid .1rem black;
+    padding: 1rem;
+    width: 100vw;
+    max-width: 768px;
+    margin: 0 0 3rem 0;
+}
+
+/* HIDE */
+.hide {
+    display: none;
+}
+
+/* -TOP MARGIN */
+.topMargin {
+    margin-top: -10rem;
 }
