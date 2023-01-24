@@ -92,6 +92,11 @@ header > a img {
     width: 100vw;
     max-width: 768px;
     margin: 0 0 3rem 0;
+    background-color: #F3EFE0;
+}
+
+.contact_content a {
+    color: #FF5714;
 }
 
 /* HIDE */
