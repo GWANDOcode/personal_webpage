@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header > img {
+    width: 1.4rem;
+    position: fixed;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.content,
+.content > img {
+    max-width: 768px;
+}
