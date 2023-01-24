@@ -7,16 +7,36 @@ html {
     font-family: "Andale Mono", AndaleMono, monospace;
 }
 
+body {
+    margin: 0;
+}
+
+/* HEADER */
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
 }
 
 header > img {
     width: 1.4rem;
-    position: fixed;
 }
 
+/* NAVBAR */
+.navigation {
+    list-style: none;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MAIN CONTENT*/
 .container {
     width: 100vw;
     display: flex;
@@ -26,4 +46,8 @@ header > img {
 .content,
 .content > img {
     max-width: 768px;
+}
+
+.content {
+    margin-top: 10rem;
 }
