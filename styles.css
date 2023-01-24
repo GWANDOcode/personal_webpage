@@ -11,13 +11,18 @@ body {
     margin: 0;
 }
 
-/* HEADER */
-header {
+/* HEADER & FOOTER */
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5rem;
     width: 100vw;
+}
+
+/* HEADER */
+header {
     position: fixed;
     border-left: 0;
     border-right: 0;
@@ -28,6 +33,15 @@ header {
 }
 
 header > img {
+    width: 1.4rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: -5rem;
+}
+
+footer > img {
     width: 1.4rem;
 }
 
@@ -46,6 +60,7 @@ header > img {
 /* MAIN CONTENT*/
 .container {
     width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
