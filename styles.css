@@ -10,12 +10,11 @@ html {
 
 body {
     margin: 0;
-    transition: height 1s;
 }
 
 /* HEADER & FOOTER */
 header,
-footer {
+.footer_content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,17 +33,16 @@ header {
     border-style: solid;
 }
 
-header > img {
+header > a img {
     width: 1.4rem;
 }
 
 /* FOOTER */
-footer {
-    position: absolute;
+.footer_content {
     margin-top: -5rem;
 }
 
-footer > a img {
+.footer_content > img {
     width: 1.4rem;
 }
 
