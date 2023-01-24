@@ -12,6 +12,11 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #A3A3A3;
+}
+
 /* HEADER & FOOTER */
 header,
 .footer_content {
@@ -92,9 +97,4 @@ header > a img {
 /* HIDE */
 .hide {
     display: none;
-}
-
-/* -TOP MARGIN */
-.topMargin {
-    margin-top: -10rem;
 }
