@@ -28,7 +28,7 @@ a:hover {
 
 /* HEADER & FOOTER */
 header,
-.footer_content {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,12 @@ header > a img {
 }
 
 /* FOOTER */
+footer {
+    flex-direction: column;
+    position: fixed;
+    margin-top: -5rem;
+}
+
 .footer_content {
     margin-top: -5rem;
 }
