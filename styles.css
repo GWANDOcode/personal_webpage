@@ -53,12 +53,8 @@ header > a img {
 
 /* FOOTER */
 footer {
+    position: fixed;
     flex-direction: column;
-    position: sticky;
-}
-
-.footer_content {
-    margin-top: -5rem;
 }
 
 .footer_content > img {
@@ -85,7 +81,6 @@ li {
 /* MAIN CONTENT*/
 .container {
     width: 100vw;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -120,12 +115,6 @@ li {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-}
-
-.magazin_cover {
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 .hover_text {
