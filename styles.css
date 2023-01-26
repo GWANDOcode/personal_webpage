@@ -32,12 +32,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
     width: 100vw;
 }
 
 /* HEADER */
 header {
+    height: 5rem;
     position: fixed;
     border-left: 0;
     border-right: 0;
@@ -53,8 +53,11 @@ header > a img {
 
 /* FOOTER */
 footer {
+    padding: 1rem;
     position: fixed;
     flex-direction: column;
+    bottom: 0rem;
+    background-color: aqua;
 }
 
 .footer_content > img {
@@ -141,7 +144,8 @@ li {
     padding: 1rem;
     width: 100vw;
     max-width: 768px;
-    margin: 0 0 3rem 0;
+    margin: 0;
+    margin-top: .7rem;
     background-color: #F3EFE0;
 }
 
@@ -152,4 +156,10 @@ li {
 /* HIDE */
 .hide {
     display: none;
+}
+
+@media (max-width: 768px) {
+    footer {
+        background-color: white;
+    }
 }
