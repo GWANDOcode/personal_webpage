@@ -58,8 +58,6 @@ function randomRGB() {
         return RGBColor = "rgb(" + RGB1 + "," + RGB2 + "," + RGB3 + ")";  
 };
 
-console.log(content);
-
 content.forEach(element => {
         
         element.addEventListener("mouseover", () => {
