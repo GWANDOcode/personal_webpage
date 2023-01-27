@@ -16,7 +16,38 @@ contactArrow.addEventListener("click", () => {
 // SCREEN SMALLER 768px
 const footerContent = document.querySelector(".footer_content");
 const navigation = document.querySelector(".navigation");
+const navigationLinks = document.querySelectorAll(".navigation > a");
+const arrow = document.querySelector("#contact_arrow")
 
-if (viewportWidth < 768) {
-        footerContent.appendChild(navigation);
+function viewportCeck() {
+        if (viewportWidth < 768) {
+
+                for (i = 0; i < navigationLinks.length/2; i++) {
+                        footerContent.prepend(navigationLinks[i]);
+                };
+        
+                for (i = navigationLinks.length/2; i < navigationLinks.length; i++) {
+                        footerContent.appendChild(navigationLinks[i]);
+                };
+        };
+        
+        
+        if (viewportWidth > 768) {
+        
+                navigationLinks.forEach(link => {
+                        navigation.appendChild(link);
+                });
+        };
 };
+
+viewportCeck();
+
+// UPDATES viewportWidth on resize 
+window.addEventListener("resize", () => {
+        viewportWidth = window.innerWidth;
+
+        viewportCeck();
+
+        console.log(viewportWidth);
+});
+

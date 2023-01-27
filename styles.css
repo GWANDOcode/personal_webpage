@@ -59,6 +59,13 @@ footer {
     bottom: 0rem;
 }
 
+.footer_content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
 .footer_content > img {
     width: 1.4rem;
 }
