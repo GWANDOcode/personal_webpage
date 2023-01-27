@@ -8,10 +8,11 @@ const footer = document.querySelector("footer");
 const contactArrow = document.querySelector("#contact_arrow");
 const contactInfo = document.querySelector(".contact_info");
 
+
 contactArrow.addEventListener("click", () => {
         contactInfo.classList.toggle("hide");
-        contactInfo.scrollIntoView();
 });
+
 
 // SCREEN SMALLER 768px
 const footerContent = document.querySelector(".footer_content");
@@ -47,7 +48,31 @@ window.addEventListener("resize", () => {
         viewportWidth = window.innerWidth;
 
         viewportCeck();
-
-        console.log(viewportWidth);
 });
 
+
+// RANDOM COLOR CHANGE ON CONTENT HOVER
+const content = document.querySelectorAll(".content");
+const colorMin = 80;
+const colorMax = 256;
+
+function randomRGB() {
+        let RGB1 = Math.floor(Math.random() * (colorMax - colorMin) + colorMin);
+        let RGB2 = Math.floor(Math.random() * (colorMax - colorMin) + colorMin);
+        let RGB3 = Math.floor(Math.random() * (colorMax - colorMin) + colorMin);
+        return RGBColor = "rgb(" + RGB1 + "," + RGB2 + "," + RGB3 + ")";  
+};
+
+console.log(content);
+
+content.forEach(element => {
+        
+        element.addEventListener("mouseover", () => {
+        body.style.backgroundColor = randomRGB();
+        body.style.transition = ".5s";
+        });
+                
+        element.addEventListener("mouseleave", () => {
+        body.style.backgroundColor = "white";
+        });
+});

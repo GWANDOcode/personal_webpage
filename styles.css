@@ -53,7 +53,7 @@ header > a img {
 
 /* FOOTER */
 footer {
-    padding: 1rem;
+    padding-bottom: 1rem;
     position: fixed;
     flex-direction: column;
     bottom: 0rem;
