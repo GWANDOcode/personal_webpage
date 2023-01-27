@@ -8,7 +8,7 @@ const footer = document.querySelector("footer");
 const contactArrow = document.querySelector("#contact_arrow");
 const contactInfo = document.querySelector(".contact_info");
 
-
+// MAKES CONTACT ARROW PULL UP CONTACT TAB
 contactArrow.addEventListener("click", () => {
         contactInfo.classList.toggle("hide");
 });
@@ -23,15 +23,10 @@ const arrow = document.querySelector("#contact_arrow")
 function viewportCeck() {
         if (viewportWidth < 768) {
 
-                for (i = 0; i < navigationLinks.length/2; i++) {
-                        footerContent.prepend(navigationLinks[i]);
-                };
-        
-                for (i = navigationLinks.length/2; i < navigationLinks.length; i++) {
-                        footerContent.appendChild(navigationLinks[i]);
-                };
+                navigationLinks.forEach(link => {
+                        footerContent.prepend(link);
+                }); 
         };
-        
         
         if (viewportWidth > 768) {
         
