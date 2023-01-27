@@ -57,7 +57,6 @@ footer {
     position: fixed;
     flex-direction: column;
     bottom: 0rem;
-    background-color: aqua;
 }
 
 .footer_content > img {
