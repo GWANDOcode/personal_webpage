@@ -21,7 +21,7 @@ const swiper = new Swiper('.swiper', {
 const body = document.querySelector("body");
 const content = document.querySelectorAll(".content");
 const colorMin = 80;
-const colorMax = 256;
+const colorMax = 210;
 
 function randomRGB() {
         let RGB1 = Math.floor(Math.random() * (colorMax - colorMin) + colorMin);
