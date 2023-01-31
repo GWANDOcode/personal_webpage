@@ -24,7 +24,7 @@ function viewportCeck() {
         if (viewportWidth < 768) {
 
                 navigationLinks.forEach(link => {
-                        footerContent.prepend(link);
+                        footerContent.appendChild(link);
                 }); 
         };
         
