@@ -10,6 +10,7 @@ html {
 
 body {
     margin: 0;
+    margin-bottom: 11rem;
 }
 
 p {
@@ -172,11 +173,6 @@ li {
 
     footer {
         background-color: white;
-    }
-
-    .contact_content {
-        border-left: 0;
-        border-right: 0;
     }
 }
 
