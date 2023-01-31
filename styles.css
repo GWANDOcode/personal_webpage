@@ -100,6 +100,10 @@ li {
     align-items: center;
 }
 
+.center_container > .content > p {
+    text-align: center;
+}
+
 .content,
 .content > img,
 .content > a img {
