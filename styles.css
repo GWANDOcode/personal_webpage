@@ -146,6 +146,15 @@ li {
     font-size: .9rem;
 }
 
+.indent {
+    margin-left: 1.5rem;
+}
+
+.content .smaller {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
 /* CONTACT INFO */
 .contact_info {
     display: flex;
