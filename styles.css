@@ -117,7 +117,7 @@ li {
 }
 
 .content > p {
-    margin: .3rem;
+    margin: .3rem 0 .3rem 0;
     font-size: 1.2rem;
 }
 
