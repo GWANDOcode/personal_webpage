@@ -165,6 +165,10 @@ li {
     color: #FF5714;
 }
 
+#contact_arrow:hover {
+    cursor: pointer;
+}
+
 /* HIDE */
 .hide {
     display: none;
