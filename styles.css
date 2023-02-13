@@ -20,7 +20,8 @@ p {
 
 a {
     text-decoration: none;
-    color: #B8B8B8;
+    color: #928d8d;
+    stroke: 2px;
 }
 
 a:hover {
